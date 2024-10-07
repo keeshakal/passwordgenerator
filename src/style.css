@@ -58,3 +58,9 @@ input {
 .btn:focus {
     outline: none;
 }
+
+footer {
+    text-align: center;
+    font-size: 16px;
+    margin-top: -15px;
+}
