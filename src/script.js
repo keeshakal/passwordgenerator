@@ -13,9 +13,16 @@ function generatePsw() {
 }
 
 function copyPsw() {
-    let output = document.getElementById("output");
-    output.select();
-    output.setSelectionRange(0, 99999); // For mobile compatibility
-    document.execCommand("copy");
-    alert("Password copied to clipboard!");
+    let output = document.getElementById("output").value;  // Get the password from the input field
+    if (output) {
+        navigator.clipboard.writeText(output)  // Use the modern clipboard API
+            .then(() => {
+                alert("Password copied to clipboard!");
+            })
+            .catch(err => {
+                alert("Failed to copy password: " + err);
+            });
+    } else {
+        alert("No password to copy!");
+    }
 }
