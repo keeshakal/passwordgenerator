@@ -2,7 +2,7 @@
     width: 300px;
     padding: 10px;
     font-family: sans-serif;
-    background: linear-gradient(358deg, #a571a1, #ebbfd5);
+    background: linear-gradient(358deg, #ffcffb, #ebbfd5);
     margin: 150px auto;
     text-align: center;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.342);
@@ -17,9 +17,9 @@
     border-radius: 5px;
   }
   .btn {
-    background: #25282A;
+    background: #facef0;
     padding: 3px 8px;
-    border: 2px solid #25282A;
+    border: 2px solid #facef0;
     color: white;
     cursor: pointer;
     font-weight: bold;
